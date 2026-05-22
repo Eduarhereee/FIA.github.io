@@ -267,13 +267,13 @@ footer { background-color: var(--bg-dark); border-top: 1px solid var(--borders);
 
     /* Hero slider móvil */
     .hero-slider { height: 100svh; height: 100dvh; }
-    .hero-slider .slide { padding: 0 6%; align-items: flex-end; padding-bottom: 80px; }
-    .hero-container { margin-top: 0; }
-    .hero-container h1 { font-size: 2.4rem; line-height: 1.15; }
-    .hero-container h4 { font-size: 11px; }
-    .hero-container p { font-size: 14px; margin-bottom: 28px; }
-    .hero-btns { flex-direction: column; gap: 12px; }
+    .hero-slider .slide { padding: 80px 6% 90px 6%; align-items: center; overflow: hidden; }
+    .hero-container { margin-top: 0; width: 100%; max-width: 100%; }
+    .hero-container h1 { font-size: clamp(1.6rem, 7vw, 2.2rem); line-height: 1.1; letter-spacing: -0.5px; margin-bottom: 16px; word-break: break-word; }
+    .hero-container h4 { font-size: 11px; letter-spacing: 1.5px; margin-bottom: 10px; }
+    .hero-container p { font-size: 13px; margin-bottom: 24px; max-width: 100%; line-height: 1.5; }
+    .hero-btns { flex-direction: column; gap: 10px; }
     .hero-btns .btn-orange,
-    .hero-btns .btn-outline { text-align: center; padding: 14px 20px; }
-    .slider-dots { bottom: 20px; }
+    .hero-btns .btn-outline { text-align: center; padding: 13px 18px; font-size: 12px; }
+    .slider-dots { bottom: 18px; }
 }
