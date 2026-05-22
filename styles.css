@@ -80,7 +80,7 @@ header.scrolled {
 .btn-outline:hover { border-color: var(--primary-orange); color: var(--primary-orange); }
 
 /* HERO SLIDER */
-.hero-slider { position: relative; width: 100%; height: 100vh; overflow: hidden; }
+.hero-slider { position: relative; width: 100%; height: 100vh; height: 100dvh; overflow: hidden; }
 .hero-slider .slide {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
     background-size: cover; background-position: center; display: flex; align-items: center; padding: 0 5%;
@@ -264,4 +264,16 @@ footer { background-color: var(--bg-dark); border-top: 1px solid var(--borders);
     .menu-toggle { display: block; }
     .hero h1 { font-size: 3rem; }
     .about-container, .contact-area, .f-container { grid-template-columns: 1fr; gap: 40px; }
+
+    /* Hero slider móvil */
+    .hero-slider { height: 100svh; height: 100dvh; }
+    .hero-slider .slide { padding: 0 6%; align-items: flex-end; padding-bottom: 80px; }
+    .hero-container { margin-top: 0; }
+    .hero-container h1 { font-size: 2.4rem; line-height: 1.15; }
+    .hero-container h4 { font-size: 11px; }
+    .hero-container p { font-size: 14px; margin-bottom: 28px; }
+    .hero-btns { flex-direction: column; gap: 12px; }
+    .hero-btns .btn-orange,
+    .hero-btns .btn-outline { text-align: center; padding: 14px 20px; }
+    .slider-dots { bottom: 20px; }
 }
