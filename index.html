@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIA - Formación Industrial Avanzada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "dpzaGvA97OvVMEj7u",
+      });
+   })();
+</script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <a href="https://wa.me/5212711709833" class="whatsapp-float" target="_blank" aria-label="Contacto por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABECERA FLOTANTE TRANSPARENTE -->
+    <header id="main-header">
+        <div class="logo">
+            <img src="Imagenes/Logo Fia Blanco.png" alt="Logo FIA">
+        </div>
+        <nav class="nav-pc">
+            <a href="#inicio">INICIO</a>
+            <a href="nosotros-page.html">NOSOTROS</a>
+            <a href="cursos.html">CURSOS</a>
+            <a href="#servicios">SERVICIOS</a>
+            <a href="#empresas">EMPRESAS</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+        <div class="header-action">
+            <div class="header-social">
+                <a href="https://www.instagram.com/fia_formacion_industrial/" target="_blank" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61570058125837" target="_blank" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/5212711709833" target="_blank" aria-label="WhatsApp" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:formacion.fia24@gmail.com" aria-label="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="#contacto" class="btn-outline-small">COTIZA CON NOSOTROS</a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <i class="fas fa-times" id="close-sidebar"></i>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#inicio">INICIO</a>
+            <a href="#nosotros">NOSOTROS</a>
+            <a href="cursos.html">CURSOS</a>
+            <a href="#servicios">SERVICIOS</a>
+            <a href="#empresas">EMPRESAS</a>
+            <a href="#contacto">CONTACTO</a>
+            <a href="#contacto" class="btn-orange" style="text-align: center; margin-top: 20px;">COTIZA CON NOSOTROS</a>
+        </nav>
+    </div>
+
+    <!-- HERO -->
+<!-- HERO SLIDER (NUEVO) -->
+    <section class="hero-slider" id="inicio">
+        <!-- Slide 1 -->
+        <div class="slide active" style="background-image: linear-gradient(rgba(17,17,17,0.7), rgba(17,17,17,0.85)), url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80');">
+            <div class="hero-container fade-in visible">
+                <h4>FORMACIÓN INDUSTRIAL AVANZADA</h4>
+                <h1>FORMACIÓN QUE CONSTRUYE<br><span class="highlight">FUTURO</span></h1>
+                <p>Capacitación especializada para potenciar personas, equipos y empresas. Impulsamos el crecimiento de la industria a través del conocimiento.</p>
+                <div class="hero-btns">
+                    <a href="cursos.html" class="btn-orange">CONOCE NUESTROS CURSOS →</a>
+                    <a href="#contacto" class="btn-outline">COTIZA CON NOSOTROS →</a>
+                </div>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide" style="background-image: linear-gradient(rgba(17,17,17,0.7), rgba(17,17,17,0.85)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80');">
+            <div class="hero-container">
+                <h4>CERTIFICACIONES OFICIALES</h4>
+                <h1>CUMPLIMIENTO NORMATIVO<br><span class="highlight">STPS Y DC-3</span></h1>
+                <p>Protege a tu personal y evita sanciones con cursos alineados al 100% con las Normas Oficiales Mexicanas.</p>
+                <div class="hero-btns">
+                    <a href="cursos.html" class="btn-orange">VER CATÁLOGO →</a>
+                </div>
+            </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide" style="background-image: linear-gradient(rgba(17,17,17,0.7), rgba(17,17,17,0.85)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80');">
+            <div class="hero-container">
+                <h4>SEGURIDAD Y PRODUCTIVIDAD</h4>
+                <h1>CERO ACCIDENTES ES<br><span class="highlight">NUESTRA META</span></h1>
+                <p>Diseñamos programas a la medida de tu planta industrial para crear una verdadera cultura de prevención.</p>
+                <div class="hero-btns">
+                    <a href="#contacto" class="btn-orange">SOLICITAR COTIZACIÓN →</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Controles del Slider -->
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+    <!-- SERVICIOS -->
+    <section class="services-grid" id="servicios">
+        <div class="s-card slide-up" style="transition-delay: 0.1s;">
+            <i class="fas fa-shield-alt"></i>
+            <h3>SEGURIDAD INDUSTRIAL</h3>
+            <p>Programas para prevenir riesgos y promover entornos seguros.</p>
+            <a href="cursos.html" class="view-more">VER CURSOS →</a>
+        </div>
+        <div class="s-card slide-up" style="transition-delay: 0.2s;">
+            <i class="fas fa-truck-pickup"></i>
+            <h3>OPERACIÓN DE MONTACARGAS</h3>
+            <p>Formación teórica y práctica para operadores certificados.</p>
+            <a href="cursos.html" class="view-more">VER CURSOS →</a>
+        </div>
+        <div class="s-card slide-up" style="transition-delay: 0.3s;">
+            <i class="fas fa-cogs"></i>
+            <h3>PROCESOS INDUSTRIALES</h3>
+            <p>Mejora de procesos y eficiencia en entornos industriales.</p>
+            <a href="cursos.html" class="view-more">VER CURSOS →</a>
+        </div>
+        <div class="s-card slide-up" style="transition-delay: 0.4s;">
+            <i class="fas fa-bolt"></i>
+            <h3>ELECTRICIDAD Y CONTROL</h3>
+            <p>Formación en sistemas eléctricos y automatización industrial.</p>
+            <a href="cursos.html" class="view-more">VER CURSOS →</a>
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="about" id="nosotros">
+        <div class="about-container">
+            <div class="about-img fade-in">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=600" alt="Planta Industrial">
+                <div class="stats-box slide-up">
+                    <div class="stat">
+                        <span>+10</span>
+                        <p>AÑOS</p>
+                    </div>
+                    <div class="stat">
+                        <span>+500</span>
+                        <p>EMPRESAS</p>
+                    </div>
+                    <div class="stat">
+                        <span>+8K</span>
+                        <p>PERSONAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content slide-up">
+                <h4>¿QUIÉNES SOMOS?</h4>
+                <h2>SOMOS EXPERTOS EN FORMACIÓN INDUSTRIAL</h2>
+                <p>En FIA, entregamos soluciones de capacitación efectivas y de alta calidad, diseñadas para responder a los desafíos reales de la industria actual.</p>
+                <a href="nosotros-page.html" class="btn-orange-small">CONOCE MÁS SOBRE NOSOTROS →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- POR QUÉ ELEGIR FIA (NUEVA SECCIÓN) -->
+    <section class="why-us">
+        <div class="why-header fade-in">
+            <h4>VENTAJAS COMPETITIVAS</h4>
+            <h2>¿POR QUÉ ELEGIR FIA?</h2>
+            <p>Metodologías comprobadas que garantizan la asimilación del conocimiento y el cumplimiento normativo.</p>
+        </div>
+        <div class="why-grid">
+            <div class="w-card slide-up" style="transition-delay: 0.1s;">
+                <i class="fas fa-award"></i>
+                <h3>Experticia Técnica</h3>
+                <p>Instructores certificados con amplia trayectoria en campo, garantizando un aprendizaje práctico.</p>
+            </div>
+            <div class="w-card slide-up" style="transition-delay: 0.2s;">
+                <i class="fas fa-clock-rotate-left"></i>
+                <h3>Flexibilidad Total</h3>
+                <p>Programas adaptados a los turnos y necesidades de su operación, minimizando el impacto productivo.</p>
+            </div>
+            <div class="w-card slide-up" style="transition-delay: 0.3s;">
+                <i class="fas fa-file-shield"></i>
+                <h3>Validez Oficial</h3>
+                <p>Certificaciones alineadas a las Normas STPS para un cumplimiento legal absoluto (DC-3).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARRUSEL DE CLIENTES -->
+    <section class="partners" id="empresas">
+        <p class="fade-in">EMPRESAS QUE CONFÍAN EN FIA</p>
+        <div class="slider-container fade-in">
+            <div class="slider-track">
+                <!-- Logos -->
+                <img src="https://placehold.co/160x60/111111/a0a0a0?text=CODELCO" alt="Codelco">
+                <img src="https://placehold.co/160x60/111111/a0a0a0?text=METSO" alt="Metso">
+                <img src="https://placehold.co/160x60/111111/a0a0a0?text=FINNING+CAT" alt="Finning Cat">
+                <img src="https://placehold.co/160x60/111111/a0a0a0?text=ANGLO+AMERICAN" alt="Anglo American">
+                <img src="https://placehold.co/160x60/111111/a0a0a0?text=BECHTEL" alt="Bechtel">
+                <img src="https://placehold.co/160x60/111111/a0a0a0?text=PEMEX" alt="Pemex">
+                <!-- Logos duplicados para el ciclo infinito -->
+                <img src="https://placehold.co/160x60/111111/a0a0a0?text=CODELCO" alt="Codelco">
+                <img src="https://placehold.co/160x60/111111/a0a0a0?text=METSO" alt="Metso">
+                <img src="https://placehold.co/160x60/111111/a0a0a0?text=FINNING+CAT" alt="Finning Cat">
+                <img src="https://placehold.co/160x60/111111/a0a0a0?text=ANGLO+AMERICAN" alt="Anglo American">
+                <img src="https://placehold.co/160x60/111111/a0a0a0?text=BECHTEL" alt="Bechtel">
+                <img src="https://placehold.co/160x60/111111/a0a0a0?text=PEMEX" alt="Pemex">
+            </div>
+        </div>
+    </section>
+
+    <!-- CURSOS -->
+    <section class="course-preview">
+        <div class="cp-header fade-in">
+            <div>
+                <h4>CURSOS DESTACADOS</h4>
+                <h2>CAPACITACIÓN PARA CADA DESAFÍO INDUSTRIAL</h2>
+            </div>
+            <a href="cursos.html" class="btn-outline">VER TODOS LOS CURSOS →</a>
+        </div>
+        <div class="cp-grid">
+            <div class="cp-card slide-up" style="transition-delay: 0.1s;">
+                <div class="badge">NUEVO</div>
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=400" alt="Trabajo en Altura">
+                <div class="cp-body">
+                    <h3>TRABAJO EN ALTURA</h3>
+                    <p><i class="far fa-clock"></i> 08 HORAS</p>
+                </div>
+            </div>
+            <div class="cp-card slide-up" style="transition-delay: 0.2s;">
+                <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=400" alt="Operación de Montacargas">
+                <div class="cp-body">
+                    <h3>OPERACIÓN DE MONTACARGAS</h3>
+                    <p><i class="far fa-clock"></i> 16 HORAS</p>
+                </div>
+            </div>
+            <div class="cp-card slide-up" style="transition-delay: 0.3s;">
+                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=400" alt="Bloqueo LOTO">
+                <div class="cp-body">
+                    <h3>BLOQUEO Y ETIQUETADO (LOTO)</h3>
+                    <p><i class="far fa-clock"></i> 08 HORAS</p>
+                </div>
+            </div>
+            <div class="cp-card slide-up" style="transition-delay: 0.4s;">
+                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=400" alt="Electricidad">
+                <div class="cp-body">
+                    <h3>ELECTRICIDAD BÁSICA INDUSTRIAL</h3>
+                    <p><i class="far fa-clock"></i> 24 HORAS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO (MAPA CORREGIDO) -->
+      <section class="contact-area" id="contacto">
+        <div class="map-box fade-in">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.6146960098954!2d-97.07022130000001!3d18.8597924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c4fd35930160cd%3A0xa3a0b5813eb98255!2sTorre%20Diez!5e0!3m2!1ses!2smx!4v1779411791899!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="form-box slide-up">
+            <h2>¿LISTO PARA POTENCIAR A TU EQUIPO?</h2>
+            <p style="color: var(--text-gray); margin-bottom: 25px;">Cotiza tu programa de capacitación a la medida.</p>
+            <form id="contact-form">
+                <!-- Se requiere 'name' attributes para EmailJS -->
+                <input type="text" name="name" placeholder="Nombre completo" required id="name">
+                <input type="email" name="email" placeholder="Correo electrónico" required id="email">
+                <input type="tel" name="tel" placeholder="Teléfono" id="tel">
+                <textarea name="message" placeholder="¿En qué curso estás interesado?" rows="4" required id="message"></textarea>
+                <button type="submit" class="btn-orange-full">ENVIAR COTIZACIÓN</button>
+            </form>
+           <div id="success-alert" class="alert-success">
+                <i class="fas fa-check-circle"></i> ¡Mensaje enviado! Nos pondremos en contacto pronto.
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="f-container">
+            <div class="f-brand">
+                <img src="Imagenes/Logo Fia Blanco.png" alt="Logo Footer">
+                <p style="font-size: 12px; color: var(--text-gray); margin-top: 15px;">Formación que impulsa el crecimiento de las personas y la industria.</p>
+            </div>
+            <div class="f-nav">
+                <h4>NAVEGACIÓN</h4>
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="cursos.html">Cursos</a>
+            </div>
+            <div class="f-contact">
+                <h4>CONTACTO</h4>
+                <p><i class="fas fa-envelope"></i> formacion.fia24@gmail.com</p>
+                <p><i class="fab fa-whatsapp"></i> +52 1 271 170 9833</p>
+                <p><i class="fas fa-map-marker-alt"></i> Córdoba, Veracruz, México</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/fia_formacion_industrial/" target="_blank" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61570058125837" target="_blank" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/5212711709833" target="_blank" aria-label="WhatsApp" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:formacion.fia24@gmail.com" aria-label="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            <p>© 2026 FIA Formación Industrial Avanzada.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
